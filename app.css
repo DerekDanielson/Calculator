@@ -6,7 +6,7 @@ body{
     width: 1000px;
     height: 550px;
     background: blue;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 #calculator{
@@ -52,4 +52,45 @@ output{
     border-radius: 5px;
     border-width: 3px;
     font-size: 16px;
+}
+
+.number, .empty{
+    background-color: red;
+}
+
+.number, .operator{
+    cursor: pointer;
+}
+
+.operator:active, .number:active{
+    font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+
+button:nth-child(4){
+    font-size: 20px;
+    background-color: blueviolet;
+}
+
+button:nth-child(8){
+    font-size: 20px;
+    background-color: chartreuse;
+}
+
+button:nth-child(12){
+    font-size: 20px;
+    background-color: orange;
+}
+
+button:nth-child(16){
+    font-size: 20px;
+    background-color: yellow;
+}
+
+button:nth-child(20){
+    font-size: 20px;
+    background-color: magenta;
 }
